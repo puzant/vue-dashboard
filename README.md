@@ -1,5 +1,7 @@
 # vue-dashboard
 
+- Simple Vue.js dashboard built using VUE's single clsas component & Flexbox
+
 ## Project setup
 ```
 npm install
