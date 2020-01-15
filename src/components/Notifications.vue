@@ -53,8 +53,9 @@
   justify-content: space-around
   transition: .5s
   &:hover
+    border: 1px solid #c1c1c1
     color: #fff
-    background-color: #1976D2
+    background-color: #2B3648
     cursor: pointer
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2)
 
