@@ -56,13 +56,15 @@
   border-radius: 5px
   padding: 20px
   background-color: #212936
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2)
+
 
 .new-clients-text
   color: #AFBDD1
   font-size: 20px
   font-weight: 500
   // padding: 20px
-  margin-top: 20px
+  margin-top: 10px
 
 .new-client-info-container
   width: 95%
