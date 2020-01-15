@@ -3,7 +3,7 @@
     <SideBar />
     <Notifications />
     <SalesChart />
-    <Clients />
+    <ClientsMessagesContainer />
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import SideBar from './components/SideBar.vue';
 import Notifications from './components/Notifications.vue';
 import SalesChart from './components/SalesChart.vue';
-import Clients from './components/Clients.vue';
+import ClientsMessagesContainer from './components/ClientsMessagesContainer.vue';
 
 
 @Component({
@@ -20,7 +20,7 @@ import Clients from './components/Clients.vue';
     SideBar,
     Notifications,
     SalesChart,
-    Clients
+    ClientsMessagesContainer
   },
 })
 export default class App extends Vue {}
