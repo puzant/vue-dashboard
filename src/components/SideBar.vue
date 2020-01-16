@@ -70,6 +70,7 @@
 
 .dropdown-icon
   margin-right: 10px
+  margin-top: 17px
 
 .user-name
   color: #AFBDD1
