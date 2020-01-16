@@ -97,7 +97,7 @@ options = {
 <style lang="sass">
 .sales-chart-contaienr
   margin-left: 265px
-  margin-top: 20px
+  margin-top: 12px
   width: 750px
   padding: 10px
   height: 434px
