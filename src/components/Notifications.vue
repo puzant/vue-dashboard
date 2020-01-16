@@ -28,7 +28,7 @@
   display: flex
   margin-left: 255px
   margin-top: 20px
-  width: 55%
+  width: 72%
 
 .number-of-clients
   color: #8997B1
