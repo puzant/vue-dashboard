@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <SideBar />
-    <Notifications />
-    <SalesChart />
+    <div class="upper-section-container">
+      <NotificationChartContainer />
+      <Tasks />
+    </div>
     <ClientsMessagesContainer />
   </div>
 </template>
@@ -10,17 +12,16 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import SideBar from './components/SideBar.vue';
-import Notifications from './components/Notifications.vue';
-import SalesChart from './components/SalesChart.vue';
 import ClientsMessagesContainer from './components/ClientsMessagesContainer.vue';
-
+import NotificationChartContainer from './components/NotificationChartContainer.vue'
+import Tasks from './components/Tasks.vue';
 
 @Component({
   components: {
     SideBar,
-    Notifications,
-    SalesChart,
-    ClientsMessagesContainer
+    ClientsMessagesContainer,
+    NotificationChartContainer,
+    Tasks,
   },
 })
 export default class App extends Vue {}
@@ -32,5 +33,10 @@ export default class App extends Vue {}
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
+}
+
+.upper-section-container {
+  display: flex;
+  flex-direction: row;
 }
 </style>
