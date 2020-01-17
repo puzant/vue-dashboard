@@ -8,11 +8,12 @@
         button.add-task-btn( @click="addNewTasks" ) ADD TASK
 
     .list-of-tasks-container
-      .task(v-for="(task, index) in tasks")
+      .empty-list-of-tasks( v-if="tasks.length == 0" ) You Don't Have Any Tasks
+      .task( v-for="(task, index) in tasks" :class="{ 'finished-task': task.done }"  )
         .task-content
-          input( type="checkbox" )
-          .listed-task-text {{task}}
-        .delete-task( click="deleteTask" )
+          input( type="checkbox" @click="finishedTask(task)")
+          .listed-task-text {{task.requied_task}}
+        .delete-task( @click="deleteTask(task)" )
           img(src="@/assets/delete.svg")
 
 </template>
@@ -21,17 +22,33 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 @Component({})
 export default class Tasks extends Vue {
-  tasks = ['Create chart to regional sales', 'Contact John from HR', 'Prepare for meeting', 'Contact Reachel from PR', 'plane for presentation']
+
+  tasks = [
+    {requied_task: 'Create chart to regional sales', done: false},
+    {requied_task: 'Contact John from HR', done: false},
+    {requied_task: 'Prepare for meeting', done: false},
+    {requied_task: 'Contact Reachel from PR', done: false},
+    {requied_task: 'plan for presentation', done: false}
+
+
+  ]
   task: string = ''
+  isTaskDone: boolean = false
 
   addNewTasks() {
     let newTask = this.task
-    this.tasks.push(this.task)
+    this.tasks.push({requied_task: this.task, done: false})
     this.task = ''
   }
 
-  deleteTask() {
+  deleteTask(index: any) {
+    let taskIndexToDelete = this.tasks.indexOf(index)
+    this.tasks.splice(taskIndexToDelete, 1)
+  }
 
+  finishedTask(task: any) {
+    // this.isTaskDone = !this.isTaskDone
+    task.done = !task.done
   }
 
 }
@@ -108,4 +125,12 @@ export default class Tasks extends Vue {
 .delete-task img
   width: 15px
   display: flex
+
+.finished-task
+  text-decoration: line-through
+
+.empty-list-of-tasks  
+  color: #8997B1
+  font-weight: 500
+  text-align: center
 </style>
