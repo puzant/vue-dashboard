@@ -23,3 +23,6 @@
 6. Vue CLI
 7. NPM 
 8. VUEX for state manegement
+
+![project-image](src/assets/preview-1.png)
+![project-image](src/assets/preview-2.png)
