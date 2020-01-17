@@ -7,7 +7,7 @@
       .clients-text Clients
 
     .clients-box-container
-      img.notification-logo(src="@/assets/people.svg")
+      img.notification-logo(src="@/assets/task.svg")
       .number-of-clients 32
       .clients-text Completed tasks
 

@@ -7,6 +7,9 @@
         input.input-tasks( placeholder="Enter a new Task" v-model="task")
         button.add-task-btn( @click="addNewTasks" ) ADD TASK
 
+    .number-of-unfinished-tasks( v-if="unfinishedTasks !== 0" )
+      | You Have {{unfinishedTasks}} Unfinished Tasks
+
     .list-of-tasks-container
       .empty-list-of-tasks( v-if="tasks.length == 0" ) You Don't Have Any Tasks
       .task( v-for="(task, index) in tasks" :class="{ 'finished-task': task.done }"  )
@@ -29,8 +32,6 @@ export default class Tasks extends Vue {
     {requied_task: 'Prepare for meeting', done: false},
     {requied_task: 'Contact Reachel from PR', done: false},
     {requied_task: 'plan for presentation', done: false}
-
-
   ]
   task: string = ''
   isTaskDone: boolean = false
@@ -49,6 +50,16 @@ export default class Tasks extends Vue {
   finishedTask(task: any) {
     // this.isTaskDone = !this.isTaskDone
     task.done = !task.done
+  }
+
+  get unfinishedTasks(): number {
+    let unfinishedTaks = 0
+    this.tasks.forEach((taskItem) => {
+      if(!taskItem.done) {
+        unfinishedTaks++
+      }
+    })
+    return unfinishedTaks
   }
 
 }
@@ -86,7 +97,7 @@ export default class Tasks extends Vue {
     outline: none
 
 .list-of-tasks-container
-  margin-top: 30px
+  margin-top: 10px
 
 .add-task-btn
   background-color: #1976D2
@@ -129,8 +140,14 @@ export default class Tasks extends Vue {
 .finished-task
   text-decoration: line-through
 
-.empty-list-of-tasks  
+.empty-list-of-tasks
   color: #8997B1
   font-weight: 500
   text-align: center
+  margin-top: 15px
+
+.number-of-unfinished-tasks
+  margin-top: 13px
+  color: #8997B1
+  font-weight: bold
 </style>
