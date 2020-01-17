@@ -2,30 +2,24 @@
 
 - Simple Vue.js dashboard built using VUE's single clsas component & Flexbox
 
-## Project setup
-```
-npm install
-```
+## Project Structure
+* The different sections are divided to components 
+* There's 6 Main components
+    * Side Bar
+    * Notifications
+    * Chart
+    * Clients 
+    * Messages
+    * Tasks
+* There 2 Wrapper components `ClientsMEssagesContainer` & `NotificationChartContainer` that are used for alignment within other components
+* Each component's content is orgenized using Flexbox
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Tecnologies Used
+1. Vue.js Frameword
+2. Vue's Single class components
+3. TypeScript 
+4. SASS preprocessor
+5. PUG templating engine 
+6. Vue CLI
+7. NPM 
+8. VUEX for state manegement
