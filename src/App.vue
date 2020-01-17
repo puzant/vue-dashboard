@@ -10,11 +10,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import SideBar from './components/SideBar.vue';
-import ClientsMessagesContainer from './components/ClientsMessagesContainer.vue';
+import { Component, Vue } from 'vue-property-decorator'
+import SideBar from './components/SideBar.vue'
+import ClientsMessagesContainer from './components/ClientsMessagesContainer.vue'
 import NotificationChartContainer from './components/NotificationChartContainer.vue'
-import Tasks from './components/Tasks.vue';
+import Tasks from './components/Tasks.vue'
 
 @Component({
   components: {
