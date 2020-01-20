@@ -1,0 +1,66 @@
+{
+   "user":{
+      "user_name":"james",
+      "user_last_name":"anguan"
+   },
+   "notices":{
+      "number_of_clients":128,
+      "completed_tasks":32,
+      "notifications":10,
+      "reports":4
+   },
+   "user_tasks":[
+      {
+         "requied_task":"Create chart to regional sales",
+         "done":false
+      },
+      {
+         "requied_task":"Contact John from HR",
+         "done":false
+      },
+      {
+         "requied_task":"Prepare for meeting",
+         "done":false
+      },
+      {
+         "requied_task":"Contact Reachel from PR",
+         "done":false
+      },
+      {
+         "requied_task":"plan for presentation",
+         "done":false
+      }
+   ],
+   "clients":[
+      {
+         "client_name":"Nicci Troani",
+         "country":"USA"
+      },
+      {
+         "client_name":"George Feilds",
+         "country":"Lebanon"
+      },
+      {
+         "client_name":"Nicci Troani",
+         "country":"France"
+      },
+      {
+         "client_name":"Nicci Troani",
+         "country":"Italy"
+      }
+   ],
+   "messages":[
+      {
+         "messages_date":1580805343,
+         "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali"
+      },
+      {
+         "messages_date":1580805343,
+         "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali"
+      },
+      {
+         "messages_date":1580805343,
+         "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali"
+      }
+   ]
+}
